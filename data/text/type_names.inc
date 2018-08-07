@@ -16,4 +16,4 @@ gTypeNames:: @ 831AE38
 	.string "PSYCHC$", 7
 	.string "FRIDGE$", 7
 	.string "DRAGON$", 7
-	.string "ZVIL$", 7
+	.string "EVIL$", 7
