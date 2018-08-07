@@ -80,7 +80,7 @@ gBattleMoves:: @ 831C898
 @ Fire Punch
 	.byte 0x04 @ effect
 	.byte 75 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 10 @ side effect chance
@@ -91,7 +91,7 @@ gBattleMoves:: @ 831C898
 @ Ice Punch
 	.byte 0x05 @ effect
 	.byte 75 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 10 @ side effect chance
@@ -102,7 +102,7 @@ gBattleMoves:: @ 831C898
 @ Thunder Punch
 	.byte 0x06 @ effect
 	.byte 75 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 10 @ side effect chance
@@ -179,7 +179,7 @@ gBattleMoves:: @ 831C898
 @ Gust
 	.byte 0x95 @ effect
 	.byte 40 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 100 @ accuracy
 	.byte 35 @ PP
 	.byte 0 @ side effect chance
@@ -190,7 +190,7 @@ gBattleMoves:: @ 831C898
 @ Wing Attack
 	.byte 0x00 @ effect
 	.byte 60 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 100 @ accuracy
 	.byte 35 @ PP
 	.byte 0 @ side effect chance
@@ -212,7 +212,7 @@ gBattleMoves:: @ 831C898
 @ Fly
 	.byte 0x9b @ effect
 	.byte 70 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 95 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -245,7 +245,7 @@ gBattleMoves:: @ 831C898
 @ Vine Whip
 	.byte 0x00 @ effect
 	.byte 35 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -487,7 +487,7 @@ gBattleMoves:: @ 831C898
 @ Bite
 	.byte 0x1f @ effect
 	.byte 60 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 25 @ PP
 	.byte 30 @ side effect chance
@@ -575,7 +575,7 @@ gBattleMoves:: @ 831C898
 @ Ember
 	.byte 0x04 @ effect
 	.byte 40 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 100 @ accuracy
 	.byte 25 @ PP
 	.byte 10 @ side effect chance
@@ -586,7 +586,7 @@ gBattleMoves:: @ 831C898
 @ Flamethrower
 	.byte 0x04 @ effect
 	.byte 95 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 10 @ side effect chance
@@ -597,7 +597,7 @@ gBattleMoves:: @ 831C898
 @ Mist
 	.byte 0x2e @ effect
 	.byte 0 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 0 @ accuracy
 	.byte 30 @ PP
 	.byte 0 @ side effect chance
@@ -641,7 +641,7 @@ gBattleMoves:: @ 831C898
 @ Ice Beam
 	.byte 0x05 @ effect
 	.byte 95 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 10 @ side effect chance
@@ -652,7 +652,7 @@ gBattleMoves:: @ 831C898
 @ Blizzard
 	.byte 0x05 @ effect
 	.byte 120 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 70 @ accuracy
 	.byte 5 @ PP
 	.byte 10 @ side effect chance
@@ -685,7 +685,7 @@ gBattleMoves:: @ 831C898
 @ Aurora Beam
 	.byte 0x44 @ effect
 	.byte 65 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 10 @ side effect chance
@@ -707,7 +707,7 @@ gBattleMoves:: @ 831C898
 @ Peck
 	.byte 0x00 @ effect
 	.byte 35 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 100 @ accuracy
 	.byte 35 @ PP
 	.byte 0 @ side effect chance
@@ -718,7 +718,7 @@ gBattleMoves:: @ 831C898
 @ Drill Peck
 	.byte 0x00 @ effect
 	.byte 80 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -784,7 +784,7 @@ gBattleMoves:: @ 831C898
 @ SUCC
 	.byte 0x03 @ effect
 	.byte 20 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -795,7 +795,7 @@ gBattleMoves:: @ 831C898
 @ Mega SUCC
 	.byte 0x03 @ effect
 	.byte 40 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -806,7 +806,7 @@ gBattleMoves:: @ 831C898
 @ Leech Seed
 	.byte 0x54 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 90 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -828,7 +828,7 @@ gBattleMoves:: @ 831C898
 @ Razor Leaf
 	.byte 0x2b @ effect
 	.byte 55 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 95 @ accuracy
 	.byte 25 @ PP
 	.byte 0 @ side effect chance
@@ -839,7 +839,7 @@ gBattleMoves:: @ 831C898
 @ Solar Beam
 	.byte 0x97 @ effect
 	.byte 120 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -861,7 +861,7 @@ gBattleMoves:: @ 831C898
 @ Stun Spore
 	.byte 0x43 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 75 @ accuracy
 	.byte 30 @ PP
 	.byte 0 @ side effect chance
@@ -872,7 +872,7 @@ gBattleMoves:: @ 831C898
 @ Sleep Powder
 	.byte 0x01 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 75 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -882,8 +882,8 @@ gBattleMoves:: @ 831C898
 
 @ Petal Dance
 	.byte 0x1b @ effect
-	.byte 120 @ power
-	.byte TYPE_GRASS
+	.byte 150 @ power
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 100 @ side effect chance
@@ -916,7 +916,7 @@ gBattleMoves:: @ 831C898
 @ Fire Spin
 	.byte 0x2a @ effect
 	.byte 15 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 70 @ accuracy
 	.byte 15 @ PP
 	.byte 100 @ side effect chance
@@ -927,7 +927,7 @@ gBattleMoves:: @ 831C898
 @ Thunder Shock
 	.byte 0x06 @ effect
 	.byte 40 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 30 @ PP
 	.byte 10 @ side effect chance
@@ -938,7 +938,7 @@ gBattleMoves:: @ 831C898
 @ Thunderbolt
 	.byte 0x06 @ effect
 	.byte 95 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 10 @ side effect chance
@@ -949,7 +949,7 @@ gBattleMoves:: @ 831C898
 @ Thunder Wave
 	.byte 0x43 @ effect
 	.byte 0 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -960,7 +960,7 @@ gBattleMoves:: @ 831C898
 @ Thunder
 	.byte 0x98 @ effect
 	.byte 120 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 70 @ accuracy
 	.byte 10 @ PP
 	.byte 30 @ side effect chance
@@ -1257,7 +1257,7 @@ gBattleMoves:: @ 831C898
 @ Haze
 	.byte 0x19 @ effect
 	.byte 0 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 0 @ accuracy
 	.byte 30 @ PP
 	.byte 0 @ side effect chance
@@ -1312,7 +1312,7 @@ gBattleMoves:: @ 831C898
 @ Mirror Move
 	.byte 0x09 @ effect
 	.byte 0 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 0 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -1389,7 +1389,7 @@ gBattleMoves:: @ 831C898
 @ Fire Blast
 	.byte 0x04 @ effect
 	.byte 120 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 85 @ accuracy
 	.byte 5 @ PP
 	.byte 10 @ side effect chance
@@ -1553,7 +1553,7 @@ gBattleMoves:: @ 831C898
 
 @ SIPP
 	.byte 0x03 @ effect
-	.byte 20 @ power
+	.byte 80 @ power
 	.byte TYPE_BUG
 	.byte 100 @ accuracy
 	.byte 15 @ PP
@@ -1576,7 +1576,7 @@ gBattleMoves:: @ 831C898
 @ Sky Attack
 	.byte 0x4b @ effect
 	.byte 140 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 90 @ accuracy
 	.byte 5 @ PP
 	.byte 30 @ side effect chance
@@ -1620,7 +1620,7 @@ gBattleMoves:: @ 831C898
 @ Spore
 	.byte 0x01 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -1850,8 +1850,8 @@ gBattleMoves:: @ 831C898
 
 @ Thief
 	.byte 0x69 @ effect
-	.byte 40 @ power
-	.byte TYPE_DARK
+	.byte 70 @ power
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 100 @ side effect chance
@@ -1895,7 +1895,7 @@ gBattleMoves:: @ 831C898
 @ Flame Wheel
 	.byte 0x7d @ effect
 	.byte 60 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 100 @ accuracy
 	.byte 25 @ PP
 	.byte 10 @ side effect chance
@@ -1917,7 +1917,7 @@ gBattleMoves:: @ 831C898
 @ Curse
 	.byte 0x6d @ effect
 	.byte 0 @ power
-	.byte TYPE_UNKNOWN
+	.byte TYPE_GHOST
 	.byte 0 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -1950,7 +1950,7 @@ gBattleMoves:: @ 831C898
 @ Aeroblast
 	.byte 0x2b @ effect
 	.byte 100 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 95 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -1961,7 +1961,7 @@ gBattleMoves:: @ 831C898
 @ Cotton Spore
 	.byte 0x3c @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 85 @ accuracy
 	.byte 40 @ PP
 	.byte 0 @ side effect chance
@@ -1994,7 +1994,7 @@ gBattleMoves:: @ 831C898
 @ Powder Snow
 	.byte 0x05 @ effect
 	.byte 40 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 100 @ accuracy
 	.byte 25 @ PP
 	.byte 10 @ side effect chance
@@ -2038,7 +2038,7 @@ gBattleMoves:: @ 831C898
 @ Faint Attack
 	.byte 0x11 @ effect
 	.byte 60 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 0 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -2115,7 +2115,7 @@ gBattleMoves:: @ 831C898
 @ Zap Cannon
 	.byte 0x06 @ effect
 	.byte 100 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 50 @ accuracy
 	.byte 5 @ PP
 	.byte 100 @ side effect chance
@@ -2159,7 +2159,7 @@ gBattleMoves:: @ 831C898
 @ Icy Wind
 	.byte 0x46 @ effect
 	.byte 55 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 95 @ accuracy
 	.byte 15 @ PP
 	.byte 100 @ side effect chance
@@ -2225,7 +2225,7 @@ gBattleMoves:: @ 831C898
 @ Giga SUCC
 	.byte 0x03 @ effect
 	.byte 80 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -2302,7 +2302,7 @@ gBattleMoves:: @ 831C898
 @ Spark
 	.byte 0x06 @ effect
 	.byte 65 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 30 @ side effect chance
@@ -2324,7 +2324,7 @@ gBattleMoves:: @ 831C898
 @ Steel Wing
 	.byte 0x8a @ effect
 	.byte 70 @ power
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte 90 @ accuracy
 	.byte 25 @ PP
 	.byte 10 @ side effect chance
@@ -2434,7 +2434,7 @@ gBattleMoves:: @ 831C898
 @ Sacred Fire
 	.byte 0x7d @ effect
 	.byte 100 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 95 @ accuracy
 	.byte 5 @ PP
 	.byte 50 @ side effect chance
@@ -2544,7 +2544,7 @@ gBattleMoves:: @ 831C898
 @ Iron Tail
 	.byte 0x45 @ effect
 	.byte 100 @ power
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte 95 @ accuracy
 	.byte 15 @ PP
 	.byte 30 @ side effect chance
@@ -2555,7 +2555,7 @@ gBattleMoves:: @ 831C898
 @ Metal Claw
 	.byte 0x8b @ effect
 	.byte 70 @ power
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte 95 @ accuracy
 	.byte 35 @ PP
 	.byte 10 @ side effect chance
@@ -2588,7 +2588,7 @@ gBattleMoves:: @ 831C898
 @ Synthesis
 	.byte 0x85 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 0 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -2654,7 +2654,7 @@ gBattleMoves:: @ 831C898
 @ Sunny Day
 	.byte 0x89 @ effect
 	.byte 0 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 0 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -2665,7 +2665,7 @@ gBattleMoves:: @ 831C898
 @ Crunch
 	.byte 0x48 @ effect
 	.byte 80 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 20 @ side effect chance
@@ -2763,8 +2763,8 @@ gBattleMoves:: @ 831C898
 
 @ Beat Up
 	.byte 0x9a @ effect
-	.byte 10 @ power
-	.byte TYPE_DARK
+	.byte 30 @ power
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -2830,8 +2830,8 @@ gBattleMoves:: @ 831C898
 @ Heat Wave
 	.byte 0x04 @ effect
 	.byte 100 @ power
-	.byte TYPE_FIRE
-	.byte 90 @ accuracy
+	.byte TYPE_LIT
+	.byte 95 @ accuracy
 	.byte 10 @ PP
 	.byte 10 @ side effect chance
 	.byte F_TARGET_BOTH_ENEMIES
@@ -2841,7 +2841,7 @@ gBattleMoves:: @ 831C898
 @ Hail
 	.byte 0xa4 @ effect
 	.byte 0 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 0 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -2852,7 +2852,7 @@ gBattleMoves:: @ 831C898
 @ Torment
 	.byte 0xa5 @ effect
 	.byte 0 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -2863,7 +2863,7 @@ gBattleMoves:: @ 831C898
 @ Flatter
 	.byte 0xa6 @ effect
 	.byte 0 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -2874,7 +2874,7 @@ gBattleMoves:: @ 831C898
 @ Will-O-Wisp
 	.byte 0xa7 @ effect
 	.byte 0 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 75 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -2885,7 +2885,7 @@ gBattleMoves:: @ 831C898
 @ Memento
 	.byte 0xa8 @ effect
 	.byte 0 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -2951,7 +2951,7 @@ gBattleMoves:: @ 831C898
 @ Charge
 	.byte 0xae @ effect
 	.byte 0 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -2962,7 +2962,7 @@ gBattleMoves:: @ 831C898
 @ Taunt
 	.byte 0xaf @ effect
 	.byte 0 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3028,7 +3028,7 @@ gBattleMoves:: @ 831C898
 @ Ingrain
 	.byte 0xb5 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3104,8 +3104,8 @@ gBattleMoves:: @ 831C898
 
 @ Knock Off
 	.byte 0xbc @ effect
-	.byte 20 @ power
-	.byte TYPE_DARK
+	.byte 60 @ power
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 100 @ side effect chance
@@ -3127,7 +3127,7 @@ gBattleMoves:: @ 831C898
 @ Eruption
 	.byte 0xbe @ effect
 	.byte 150 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 100 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -3182,7 +3182,7 @@ gBattleMoves:: @ 831C898
 @ Snatch
 	.byte 0xc3 @ effect
 	.byte 0 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 0 @ side effect chance
@@ -3270,7 +3270,7 @@ gBattleMoves:: @ 831C898
 @ Feather Dance
 	.byte 0x3a @ effect
 	.byte 0 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -3292,8 +3292,8 @@ gBattleMoves:: @ 831C898
 @ Blaze Kick
 	.byte 0xc8 @ effect
 	.byte 85 @ power
-	.byte TYPE_FIRE
-	.byte 90 @ accuracy
+	.byte TYPE_LIT
+	.byte 100 @ accuracy
 	.byte 10 @ PP
 	.byte 10 @ side effect chance
 	.byte TARGET_SELECTED_POKEMON
@@ -3314,7 +3314,7 @@ gBattleMoves:: @ 831C898
 @ Ice Ball
 	.byte 0x75 @ effect
 	.byte 30 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 90 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3325,7 +3325,7 @@ gBattleMoves:: @ 831C898
 @ Needle Arm
 	.byte 0x96 @ effect
 	.byte 60 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 30 @ side effect chance
@@ -3380,7 +3380,7 @@ gBattleMoves:: @ 831C898
 @ Blast Burn
 	.byte 0x50 @ effect
 	.byte 150 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 90 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -3402,8 +3402,8 @@ gBattleMoves:: @ 831C898
 @ Meteor Mash
 	.byte 0x8b @ effect
 	.byte 100 @ power
-	.byte TYPE_STEEL
-	.byte 85 @ accuracy
+	.byte TYPE_METAL
+	.byte 95 @ accuracy
 	.byte 10 @ PP
 	.byte 20 @ side effect chance
 	.byte TARGET_SELECTED_POKEMON
@@ -3435,7 +3435,7 @@ gBattleMoves:: @ 831C898
 @ Aromatherapy
 	.byte 0x66 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 0 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -3446,7 +3446,7 @@ gBattleMoves:: @ 831C898
 @ Fake Tears
 	.byte 0x3e @ effect
 	.byte 0 @ power
-	.byte TYPE_DARK
+	.byte TYPE_EVIL
 	.byte 100 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3457,7 +3457,7 @@ gBattleMoves:: @ 831C898
 @ Air Cutter
 	.byte 0x2b @ effect
 	.byte 55 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 95 @ accuracy
 	.byte 25 @ PP
 	.byte 0 @ side effect chance
@@ -3468,7 +3468,7 @@ gBattleMoves:: @ 831C898
 @ Overheat
 	.byte 0xcc @ effect
 	.byte 140 @ power
-	.byte TYPE_FIRE
+	.byte TYPE_LIT
 	.byte 90 @ accuracy
 	.byte 5 @ PP
 	.byte 100 @ side effect chance
@@ -3512,7 +3512,7 @@ gBattleMoves:: @ 831C898
 @ Metal Sound
 	.byte 0x3e @ effect
 	.byte 0 @ power
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte 85 @ accuracy
 	.byte 40 @ PP
 	.byte 0 @ side effect chance
@@ -3523,7 +3523,7 @@ gBattleMoves:: @ 831C898
 @ Grass Whistle
 	.byte 0x01 @ effect
 	.byte 0 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 55 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -3622,7 +3622,7 @@ gBattleMoves:: @ 831C898
 @ Sheer Cold
 	.byte 0x26 @ effect
 	.byte 1 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 30 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -3644,7 +3644,7 @@ gBattleMoves:: @ 831C898
 @ Bullet Seed
 	.byte 0x1d @ effect
 	.byte 10 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 30 @ PP
 	.byte 0 @ side effect chance
@@ -3655,7 +3655,7 @@ gBattleMoves:: @ 831C898
 @ Aerial Ace
 	.byte 0x11 @ effect
 	.byte 90 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 0 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3666,7 +3666,7 @@ gBattleMoves:: @ 831C898
 @ Icicle Spear
 	.byte 0x1d @ effect
 	.byte 10 @ power
-	.byte TYPE_ICE
+	.byte TYPE_FRIDGE
 	.byte 100 @ accuracy
 	.byte 30 @ PP
 	.byte 0 @ side effect chance
@@ -3677,7 +3677,7 @@ gBattleMoves:: @ 831C898
 @ Iron Defense
 	.byte 0x33 @ effect
 	.byte 0 @ power
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte 0 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -3721,7 +3721,7 @@ gBattleMoves:: @ 831C898
 @ Frenzy Plant
 	.byte 0x50 @ effect
 	.byte 150 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 90 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
@@ -3743,7 +3743,7 @@ gBattleMoves:: @ 831C898
 @ Bounce
 	.byte 0x9b @ effect
 	.byte 85 @ power
-	.byte TYPE_FLYING
+	.byte TYPE_BIRD
 	.byte 85 @ accuracy
 	.byte 5 @ PP
 	.byte 30 @ side effect chance
@@ -3787,7 +3787,7 @@ gBattleMoves:: @ 831C898
 @ Volt Tackle
 	.byte 0xc6 @ effect
 	.byte 120 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -3798,7 +3798,7 @@ gBattleMoves:: @ 831C898
 @ Magical Leaf
 	.byte 0x11 @ effect
 	.byte 75 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 0 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3831,7 +3831,7 @@ gBattleMoves:: @ 831C898
 @ Leaf Blade
 	.byte 0x2b @ effect
 	.byte 90 @ power
-	.byte TYPE_GRASS
+	.byte TYPE_WEED
 	.byte 100 @ accuracy
 	.byte 15 @ PP
 	.byte 0 @ side effect chance
@@ -3864,7 +3864,7 @@ gBattleMoves:: @ 831C898
 @ Shock Wave
 	.byte 0x11 @ effect
 	.byte 60 @ power
-	.byte TYPE_ELECTRIC
+	.byte TYPE_AC/DC
 	.byte 0 @ accuracy
 	.byte 20 @ PP
 	.byte 0 @ side effect chance
@@ -3886,7 +3886,7 @@ gBattleMoves:: @ 831C898
 @ Doom Desire
 	.byte 0x94 @ effect
 	.byte 120 @ power
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte 85 @ accuracy
 	.byte 5 @ PP
 	.byte 0 @ side effect chance
